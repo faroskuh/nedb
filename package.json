@@ -1,5 +1,5 @@
 {
-  "name": "@seald-io/nedb",
+  "name": "@d0v3riz/nedb",
   "version": "4.0.2",
   "files": [
     "lib/**/*.js",
