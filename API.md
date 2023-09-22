@@ -282,6 +282,7 @@ Will return pointers to matched elements (shallow copies), returning full copies
         * [.remove(query, [options], [cb])](#Datastore+remove)
         * [.removeAsync(query, [options])](#Datastore+removeAsync) ⇒ <code>Promise.&lt;number&gt;</code>
         * ["event:compaction.done"](#Datastore+event_compaction.done)
+        * ["event:operations.done"](#Datastore+event_operations.done)
     * _inner_
         * [~countCallback](#Datastore..countCallback) : <code>function</code>
         * [~findOneCallback](#Datastore..findOneCallback) : <code>function</code>
@@ -743,6 +744,12 @@ if the update did not actually modify them.</p>
 <p>Compaction event. Happens when the Datastore's Persistence has been compacted.
 It happens when calling [compactDatafileAsync](#Datastore+compactDatafileAsync), which is called periodically if you have called
 [setAutocompactionInterval](#Datastore+setAutocompactionInterval).</p>
+
+<a name="Datastore+event_operations.done"></a>
+
+### "event:operations.done"
+<p>Operations event. Happens when the Datastore's is Find, FindOne, Update, Remove, Insert, or Count.
+It has "type" object in it, which is can have a string, "find", "findOne", "update", "remove", "insert", "count"</p>
 
 **Kind**: event emitted by [<code>Datastore</code>](#Datastore)  
 <a name="Datastore..countCallback"></a>
