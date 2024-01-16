@@ -1,5 +1,5 @@
 {
-  "name": "@d0v3riz/nedb",
+  "name": "@faroskuh/nedb",
   "version": "4.0.3",
   "files": [
     "lib/**/*.js",
